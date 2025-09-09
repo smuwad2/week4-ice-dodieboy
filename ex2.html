@@ -26,6 +26,15 @@
     <script>
         var square=true;
        // add code here
+       function changeShape(){
+        if(square){
+            square = false
+            document.getElementById("div1").style.borderRadius = "50%";
+        }else{
+            square = true;
+            document.getElementById("div1").style.borderRadius = "0px";
+        }
+       }
         
     </script>
 

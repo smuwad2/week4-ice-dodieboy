@@ -29,22 +29,7 @@
          // document.getElementsByTagName("ul")[0].innerHTML += "<li>"+input+"</li>";
          const li = document.createElement("li");
          li.innerText = input;
-         li.appendChild(createDelete());
          document.getElementsByTagName("ul")[0].appendChild(li);
-      }
-
-      //add delete button
-      let liList = document.getElementsByTagName("ul")[0].children;
-
-      function createDelete(){
-         const btn = document.createElement("button");
-         btn.innerText = "Delete";
-         btn.onclick = function () { this.parentNode.remove() };
-         return btn
-      }
-
-      for (let i = 0; i < liList.length; i++) {
-         liList[i].appendChild(createDelete());
       }
    </script>
 
